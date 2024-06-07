@@ -9,7 +9,7 @@ This project serves as a practical exercise for learning Javascript including DO
 ## Link:
 
 
-[Click Here](https://haikerwalabhishek.github.io/My-Top-Flix/)
+[Click Here](https://haikerwalabhishek.github.io/registration-system/)
 
 ## Preview:
 
