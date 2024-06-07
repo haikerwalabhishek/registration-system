@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #88888883;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #55555585;
+  }
+
+  
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color:white;
+}
+
+#stars{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+h1{
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.containerMain{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 90vh;
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.63);
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    height: 10%;
+}
+
+.main{
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: flex;
+}
+
+.formConainer{
+    width: 30%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recordContainer{
+    width: 100%;
+    height: 67vh;
+    background-color: rgba(255, 255, 255, 0.425);
+    overflow-y: scroll;
+}
+
+.studentFormSection{
+    min-height: 450px;
+    max-height: 450px;
+    min-width: 320px;
+    max-width: 320px;
+    background-color: rgba(5, 5, 5, 0.445);
+    border-radius: 10px;
+    border: 2px solid white;
+    
+}
+
+.studentFormSection:hover{
+    box-shadow: 0px 0px 50px rgb(48, 47, 47);
+}
+
+
+.h2form{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: rgba(255, 255, 255, 0.973);
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#studentForm{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.subtn{
+    text-align: center;
+}
+
+#submit{
+    background-color: rgba(255, 255, 255, 0.712);
+    border: none;
+    color: black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: white;
+}
+
+#studentForm div label{
+    font-size: larger;
+    font-weight: 400;
+}
+
+#studentForm div input{
+    width: 100%;
+    height: 40px;
+    color: black;
+    
+}
+
+.h2record{
+    padding: 10px;
+    background-color: rgba(77, 76, 76, 0.822);
+    color: rgba(255, 255, 255, 0.973);
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.tableHead{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    background-color: #000000a9;
+}
+
+.tableHead > div {
+    text-align: center;
+}
+
+.tableContent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tableContent:nth-child(odd){
+    background-color: rgba(104, 11, 11, 0.555);
+}
+.tableContent:nth-child(even){
+    background-color: rgba(156, 88, 88, 0.555);
+}
+
+.tableContent div h4{
+    overflow-wrap:break-word ;
+    text-align: center;
+    min-width: 46.27px;
+    max-width: 177.44px;
+}
+
+h3{
+    width: 100%;
+    padding: 10px;
+}
+
+#edit,#remove{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+}
+
+#edit:hover,#remove:hover{
+    box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
+    filter: invert(0);
+}
+
+#buttonEdit, #buttonRemove{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#buttonEdit:hover, #buttonRemove:hover{
+    background-color: white;
+    border-radius: 50%;
+    height: 25px;
+
+}
+
+#controlButtons{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.recordMainContainer{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1240px){
+    .main{
+        flex-direction: column;
+        overflow-y: scroll;
+        padding: 10px;
+    }
+
+    .formConainer{
+        height: auto;
+        width: auto;
+    }
+    .recordContainer{
+        width: auto;
+        height: 60vh;
+    
+    }
+
+    .formConainer{
+        padding-bottom:10px;;
+    }
+}
+
+@media (max-width:500px){
+    .studentFormSection{
+        min-height: 350px;
+        max-height: 350px;
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+    .h2form{
+        padding: 10px;
+        font-weight: 600;
+        font-size: medium;
+    }
+    
+    #studentForm{
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 100%;
+        width: 100%;
+        gap: 13px;
+    }
+
+    #studentForm div label{
+        font-size: medium;
+    }
+    
+    #studentForm div input{
+        width: 100%;
+        height: 30px;
+        
+    }
+
+    .h2record{
+        font-size: medium;
+    }
+
+
+    h3{
+        padding: 2px;
+        font-size: small;
+    }
+    
+}
+
+@media (max-width:600px){
+    
+.h2record{
+    padding: 5px;
+}
+
+}
+
+@media (max-width:670px) {
+    #edit,#remove{
+        height: 15px;
+        width: 15px;
+    }
+
+    .tableContent div h4{
+        overflow-wrap:break-word ;
+        text-align: center;
+        max-width: 46.27px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <video autoplay muted loop id="stars">
+        <source src="./static/reg.mp4" type="video/mp4">
+    </video>
+    <section class="containerMain">
+        <section class="container">
+            <!-- header -->
+            <header>
+                <h1>Student Registration System</h1>
+            </header>
+
+            <!-- main -->
+           <section class="main">
+                <div class="formConainer">
+                    <section class="studentFormSection">
+                        <h2 class="h2form">Register New Student</h2>
+                        <form id="studentForm">
+                            <div>
+                                <label for="name">Student Name:</label><br>
+                                <input type="text" id="name" name="name" placeholder="ENTER YOUR NAME" required>
+                            </div>
+                            <div>
+                                <label for="ID">Student ID:</label><br>
+                                <input type="number" id="ID" name="ID" placeholder="ENTER YOUR STUDENT ID" required>
+                            </div>
+                            <div>
+                                <label for="email">Student Email:</label><br>
+                                <input type="email" id="email" name="email" placeholder="ENTER YOUR EMAIL ID" required>
+                            </div>
+                            <div>
+                                <label for="phone">Student Contact:</label><br>
+                                <input type="number" id="tel" name="tel" placeholder="ENTER YOUR MOBILE NUMBER" required>
+                            </div>
+                            <div class="subtn">
+                                <button type="submit" id="submit">Register</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="recordMainContainer">
+                    <h2 class="h2record">Registered Students</h2>
+                    <div class="tableHead">
+                            <div>
+                                <h3>Name</h3>                        
+                            </div>
+                            <div>
+                                <h3>ID</h3>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                            </div>
+                            <div>
+                                <h3>Contact</h3>
+                            </div>
+                            <div>
+                                <h3>Controls</h3>
+                            </div>
+                    </div>
+                    <div class="recordContainer">
+                    </div>
+                </div>
+           </section>
+           
+        </section>
+        
+    </section>
+    <script src="./script.js" charset="UTF-8"></script>
+</body>
+</html>
