@@ -14,6 +14,6 @@ This project serves as a practical exercise for learning Javascript including DO
 ## Preview:
 
 
-<img src="https://github.com/haikerwalabhishek/My-Top-Flix/blob/main/preview1.png" height=300px width=500px>
-<img src="https://github.com/haikerwalabhishek/My-Top-Flix/blob/main/preview2.png" height=300px width=500px>
+<img src="https://raw.githubusercontent.com/haikerwalabhishek/registration-system/main/preview1.png" height=300px width=500px>
+
 
